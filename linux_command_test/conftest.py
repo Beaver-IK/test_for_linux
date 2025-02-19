@@ -19,12 +19,12 @@ def test_file():
 def temp_directory_with_files():
     """Фикстура для создания временной директории с несколькими файлами."""
     with tempfile.TemporaryDirectory() as tmpdir:
-        with open(os.path.join(tmpdir, "file1.txt"), "w") as f1:
-            f1.write("Content of file1")
-        with open(os.path.join(tmpdir, "file2.txt"), "w") as f2:
-            f2.write("Content of file2")
-        with open(os.path.join(tmpdir, ".env"), "w") as f3:
-            f3.write("Content of env file")
+        with open(os.path.join(tmpdir, 'file1.txt'), 'w') as f1:
+            f1.write('Content of file1')
+        with open(os.path.join(tmpdir, 'file2.txt'), 'w') as f2:
+            f2.write('Content of file2')
+        with open(os.path.join(tmpdir, '.env'), 'w') as f3:
+            f3.write('Content of env file')
 
         yield tmpdir
 
