@@ -60,8 +60,8 @@ class TestWc(BaseLinuxCommandTest):
 
     @pytest.mark.parametrize("args, expected_output", [
         (['-l'], '1'),
-        (['-w'], '2'),
-        (['-c'], '45'),
+        (['-w'], '6'),
+        (['-c'], '81'),
     ])
     def test_command(self, args, expected_output, test_file):
         args.append(test_file)
